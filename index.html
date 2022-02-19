@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </link>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>New Tab</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="side">
+                <div class="date">
+                    <span id="hour" data-second="25">19:00</span>
+                    <span id="dd">January <span id="d">17</span></span>
+                </div>
+                <div class="notes">
+                    <div color="#fff" fontSize="19px" fontFamily="var(--font-poppins)" marginBottom="15px">
+                        <span>Recent reminders</span>
+                    </div>
+                    <ul class="st-notes">
+                        <li class="item reverse">
+                            <div>
+                                <div class="title"><span id="title">Some title</span></div>
+                                <div class="desc">
+                                    <span id="desc">Some description about...</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="more"><span>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span></button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <div class="title"><span id="title">Some title</span></div>
+                                <div class="desc">
+                                    <span id="desc">Some description about...</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="more"><span>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span></button>
+                            </div>
+                        </li>
+                        <li class="item reverse">
+                            <div>
+                                <div class="title"><span id="title">Some title</span></div>
+                                <div class="desc">
+                                    <span id="desc">Some description about...</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="more"><span>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="add">
+                        <div><button class="add-btn"><span><i class="fas fa-add"></i></span></button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="icons">
+                    <div class="st-row">
+                        <div class="st-col">
+                            <div class="reversed">
+                                <i class="fa-brands fa-youtube yt"></i>
+                            </div>
+                        </div>
+                        <div class="st-col">
+                            <div>
+                                <i class="gh fa-brands fa-github"></i>
+                            </div>
+                        </div>
+                        <div class="st-col">
+                            <div class="reversed">
+                                <i class="fab fa-js eval-js"></i>
+                            </div>
+                        </div>
+                        <div class="st-col">
+                            <div>
+                                <i class="fa-brands fa-telegram tg"></i>
+                            </div>
+                        </div>
+                        <div class="st-col">
+                            <div class="reversed">
+                                <i class="fa-brands fa-google gg"></i>
+                            </div>
+                        </div>
+                        <div class="st-col">
+                            <div>
+                                <i class="st fa-brands fa-stack-overflow"></i>
+                            </div>
+                        </div>
+                        <div class="st-col">
+                            <div class="reversed">
+                                <i class="fa-solid fa-calculator cl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="modal-section">
+        <div class="modal-wrapper">
+            <div class="wrapper">
+            	<label for="userTitle">Title</label>
+                <div class="col">
+                    <input type="text" id="userTitle" placeholder="title here">
+                </div>
+            	<label for="userContent">Content</label>
+                <div class="col">
+                    <textarea id="userContent" cols="30" rows="10" placeholder="content here"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/strange.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
