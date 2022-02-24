@@ -1,11 +1,53 @@
 // import { anime } from "./anime.js" 
 function date() {
     const now = new Date();
+    var month = void 0;
+    switch(now.getMonth()){
+        case 0: 
+            month = "January";
+            break;
+        case 1:
+            month = "February";
+            break;
+        case 2: 
+            month = "March";
+            break;
+        case 3: 
+            month = "April";
+            break;
+        case 4:
+            month = "May";
+            break;
+        case 5:
+            month = "June";
+            break;
+        case 6:
+            month = "July"
+            break;
+        case 7:
+            month = "August";
+            break;
+        case 8:
+            month = "September";
+            break;
+        case 9:
+            month = "October";
+            break;
+        case 10:
+            month = "November";
+            break;
+        case 11:
+            month = "December";
+            break;
+        default: 
+            month = "Cucumber"
+
+    }
     return {
         hour: now.getHours().toString().length == 1 ? "0"+ now.getHours(): now.getHours(),
         minute: now.getMinutes().toString().length == 1 ? '0'+  now.getMinutes() : now.getMinutes(),
         second: now.getSeconds(),
-        month: now.getMonth(),
+        month: month,
         date:  now.getDate()
     }
 }
@@ -14,7 +56,8 @@ function setDate() {
     $h.text(date().hour)
     $m.text(date().minute)
     $hour.setAttribute('data-second', date().second)
-    $d.text(date().date)
+    $date.text(date().date);
+    $month.text(date().month);
 }
 setDate()
 
