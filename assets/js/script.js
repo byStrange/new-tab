@@ -75,13 +75,14 @@ $add.on('click', function () {
 
 $modalAdd.on('click', function (event) {
     event.preventDefault();
-    event.stopPropogation()
-    anime.timeline({
-        targets: $modalAdd,
-        opacity: opacity
-    }).add({
-        scale: 0,
-        easing: easing
-    })
+    if(event.target = $modalAdd) {
+        anime.timeline({
+            targets: $modalAdd,
+            opacity: opacity
+        }).add({
+            scale: 0,
+            easing: easing
+        })
+    }
     // $modalAdd.css('display', 'none')
 })
