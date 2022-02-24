@@ -85,6 +85,6 @@ $modalAdd.on('click', function (event) {
             scale: 0,
             easing: easing
         })
-    }
+    } else {alert()}
     // $modalAdd.css('display', 'none')
 })
