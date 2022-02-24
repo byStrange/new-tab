@@ -32,7 +32,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../images/215lock7.jpg');
+  background-image: url('../images/215lock7.jpg');
+  background-color: var(--bg-color);
+  background-blend-mode:multiply;
   /* background: var(--bg-color); */
 }
 .container .wrapper {
