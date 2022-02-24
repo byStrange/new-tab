@@ -15,5 +15,5 @@ function date() {
 every().second(()=>{
     $hour.text(`${date().hour}:${date().minute}`)
     $hour.setAttribute('date-second', date().second)
-    $d.text('')
+    $d.text(date().day)
 })
