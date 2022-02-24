@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Culdesac';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Culdesac'), url('../font/Culdesac.woff') format('woff');
+}
+@font-face {
+    font-family: 'Culdesac2';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Culdesac2'), url('../font/Culdesac2.woff') format('woff');
+}
+
