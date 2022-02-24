@@ -96,4 +96,10 @@ function open() {
         opacity: opacity,
         easing: easing
     })
+    anime({
+        targets: $modalAdd.querySelectorAll('*'),
+        translateX: [-40, 0],
+        delay: anime.stagger(100),
+        easing: easing
+    })
 }
