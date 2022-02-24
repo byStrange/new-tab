@@ -67,6 +67,28 @@ setDate()
 every().second(setDate)
 var height = $modalAdd.getBoundingClientRect().height;
 $add.on('click', function () {
+    open()
+})
+$modalAdd.on('click', function (event) {
+    console.log(event.target == $modalAdd ? $modalAdd : '')
+    if(event.target == $modalAdd) {
+        close()
+    }
+})
+
+function close() {
+    anime.timeline({
+        targets: $modalAdd,
+        opacity: 0
+    }).add({
+        scale: 5,
+        opacity: 0,
+        easing: easing
+    }).finished.then(()=>{
+        $modalAdd.css('display', 'none')
+    })
+}
+function open() {
     $modalAdd.css('display', 'flex')
     anime({
         targets: $modalAdd,
@@ -74,20 +96,4 @@ $add.on('click', function () {
         opacity: opacity,
         easing: easing
     })
-})
-
-$modalAdd.on('click', function (event) {
-    console.log(event.target == $modalAdd ? $modalAdd : '')
-    if(event.target == $modalAdd) {
-        anime.timeline({
-            targets: $modalAdd,
-            opacity: 0
-        }).add({
-            scale: 5,
-            opacity: 0,
-            easing: easing
-        }).finished.then(()=>{
-            $modalAdd.css('display', 'none')
-        })
-    } // $modalAdd.css('display', 'none')
-})
+}
