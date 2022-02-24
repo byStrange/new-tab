@@ -83,7 +83,7 @@ $modalAdd.on('click', function (event) {
             targets: $modalAdd,
             opacity: 0
         }).add({
-            scale: 2,
+            scale: 5,
             opacity: 0,
             easing: easing
         }).finished.then(()=>{
