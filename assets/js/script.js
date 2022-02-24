@@ -104,3 +104,37 @@ function open() {
         easing: easing
     })
 }
+
+class Item {
+    constructor(title, content) {
+        this.title = title;
+        this.content = content;
+        this.maxWidth = 20
+    }
+    make() {
+        var template = `
+            <div>
+                <div class="title"><span id="title">${this.title}</span></div>
+                <div class="desc">
+                    <span id="desc">${this.content.slice(0, this.maxWidth)}...</span>
+                </div>
+            </div>
+            <div>
+                <button class="more" id="more"><span>
+                    <i class="fas fa-chevron-right"></i>
+                </span></button>
+            </div>
+        `
+        this.template = template;
+    }
+    render() {
+        this.make()
+        let li = document.createElement('li');
+            li.className = "item";
+            li.innerHTML = this.template;
+        $notes.appendChild(li)
+    }
+}
+
+var  a= new Item('Hello', 'free guy')
+a.render()
