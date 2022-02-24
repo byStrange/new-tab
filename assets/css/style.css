@@ -94,8 +94,8 @@
   width: 50%;
 }
 #date{
-  outline: 1px solid red;
-  outline-offset: 5px;
+  color: red;
+  margin-left: 8px;
 }
 .st-notes .item{
   list-style: none;
