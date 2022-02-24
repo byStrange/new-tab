@@ -1,4 +1,4 @@
-import { anime } from "./anime"
+import { anime } from "./anime.js"
 function date() {
     const now = new Date();
     return {
