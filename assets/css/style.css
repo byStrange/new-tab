@@ -93,6 +93,10 @@
 .st-notes{
   width: 50%;
 }
+#date{
+  outline: 1px solid red;
+  outline-offset: 5px;
+}
 .st-notes .item{
   list-style: none;
   color: #fff;
