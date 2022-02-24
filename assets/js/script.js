@@ -16,5 +16,6 @@ function setDate() {
     $hour.setAttribute('data-second', date().second)
     $d.text(date().date)
 }
+setDate()
 
 every().second(setDate)
