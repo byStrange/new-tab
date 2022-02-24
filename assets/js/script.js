@@ -1,4 +1,4 @@
-import { anime } from "./anime.js" 
+// import { anime } from "./anime.js" 
 function date() {
     const now = new Date();
     return {
@@ -16,4 +16,3 @@ every().milliSecond(()=>{
     $hour.setAttribute('data-second', date().second)
     $d.text(date().date)
 })
-console.log(anime)
