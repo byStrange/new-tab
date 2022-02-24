@@ -81,10 +81,10 @@ $modalAdd.on('click', function (event) {
     if(event.target == $modalAdd) {
         anime.timeline({
             targets: $modalAdd,
-            opacity: [1, 0]
+            opacity: 0
         }).add({
-            scale: 3,
-            opacity: [1, 0],
+            scale: 2,
+            opacity: 0,
             easing: easing
         }).finished.then(()=>{
             $modalAdd.css('display', 'none')
