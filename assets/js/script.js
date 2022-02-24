@@ -10,10 +10,11 @@ function date() {
     }
 }
 
-
-every().milliSecond(()=>{
+function setDate() {
     $h.text(date().hour)
     $m.text(date().minute)
     $hour.setAttribute('data-second', date().second)
     $d.text(date().date)
-})
+}
+
+every().second(setDate)
