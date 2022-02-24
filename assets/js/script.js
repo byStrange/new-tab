@@ -69,20 +69,22 @@ $add.on('click', function () {
     anime({
         targets: $modalAdd,
         scale: 1,
-        opacity: opacity
+        opacity: opacity,
+        easing: easing
     })
 })
 
 $modalAdd.on('click', function (event) {
     event.preventDefault();
+    console.log(event.target)
     if(event.target = $modalAdd) {
-        anime.timeline({
-            targets: $modalAdd,
-            opacity: opacity
-        }).add({
-            scale: 0,
-            easing: easing
-        })
+        // anime.timeline({
+            // targets: $modalAdd,
+            // opacity: opacity
+        // }).add({
+            // scale: 0,
+            // easing: easing
+        // })
     }
     // $modalAdd.css('display', 'none')
 })
