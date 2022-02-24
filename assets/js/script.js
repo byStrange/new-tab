@@ -1,4 +1,6 @@
 // import { anime } from "./anime.js" 
+const opacity = [0, 1]
+const easing = "easeOutExpo"
 function date() {
     const now = new Date();
     var month = void 0;
@@ -66,17 +68,18 @@ var height = $modalAdd.getBoundingClientRect().height;
 $add.on('click', function () {
     anime({
         targets: $modalAdd,
-        height: height
+        scale: 1,
+        opacity: opacity
     })
 })
 
 $modalAdd.on('click', function () {
     anime.timeline({
         targets: $modalAdd,
-        opacity: [1, 0]
+        opacity: opacity
     }).add({
-        height: 0,
-        easing: 'easeOutExpo'
+        scale: 0,
+        easing: easing
     })
     // $modalAdd.css('display', 'none')
 })

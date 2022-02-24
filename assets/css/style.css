@@ -236,7 +236,7 @@ i{
   justify-content: center;
   background: rgba(0,0,0,0.5);
   backdrop-filter: blur(10px);
-  height: 0px;
+  transform: scale(0)
 }
 
 .modal-section .modal-wrapper {
