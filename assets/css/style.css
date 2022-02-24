@@ -44,7 +44,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--bg-color);
+  background: url('../images/2157.png');
+  /* background: var(--bg-color); */
 }
 .container .wrapper {
   width: 85%;
