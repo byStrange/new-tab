@@ -62,3 +62,10 @@ function setDate() {
 setDate()
 
 every().second(setDate)
+
+$add.on('click', function () {
+    $modalAdd.css('display', 'flex')
+})
+window.on('click', function() {
+    console.log(event)
+})
