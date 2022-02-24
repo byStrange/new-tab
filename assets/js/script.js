@@ -62,9 +62,12 @@ function setDate() {
 setDate()
 
 every().second(setDate)
-
+var height = $modalAdd.getBoundingClientRect().height;
 $add.on('click', function () {
-    $modalAdd.css('display', 'flex')
+    anime({
+        targets: $modalAdd,
+        height: height
+    })
 })
 
 $modalAdd.on('click', function () {
