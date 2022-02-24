@@ -12,7 +12,8 @@ function date() {
 
 
 every().milliSecond(()=>{
-    $hour.text(`${date().hour}:${date().minute}`)
+    $h.text(date().hour)
+    $m.text(date().minute)
     $hour.setAttribute('data-second', date().second)
     $d.text(date().date)
 })
