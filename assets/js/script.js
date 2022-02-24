@@ -82,7 +82,7 @@ $modalAdd.on('click', function (event) {
             targets: $modalAdd,
             opacity: opacity
         }).add({
-            scale: 5,
+            scale: 3,
             easing: easing
         }).finished.then(()=>{
             $modalAdd.css('display', 'none')
