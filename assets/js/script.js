@@ -77,15 +77,13 @@ $add.on('click', function () {
 $modalAdd.on('click', function (event) {
     event.preventDefault();
     console.log(event.target == $modalAdd ? $modalAdd : '')
-    if(event.target = $modalAdd) {
-        // anime.timeline({
-        //     targets: $modalAdd,
-        //     opacity: opacity
-        // }).add({
-        //     scale: 0,
-        //     easing: easing
-        // })
-        alert('s')
-    } else {alert()}
-    // $modalAdd.css('display', 'none')
+    if(event.target == $modalAdd) {
+        anime.timeline({
+            targets: $modalAdd,
+            opacity: opacity
+        }).add({
+            scale: 0,
+            easing: easing
+        })
+    } // $modalAdd.css('display', 'none')
 })
