@@ -915,7 +915,7 @@ function isDocumentHidden() {
 
 // Public Instance
 
-function anime(params) {
+export function anime(params) {
   if ( params === void 0 ) params = {};
 
 
