@@ -12,7 +12,7 @@ function date() {
 }
 
 
-every().second(()=>{
+every().milliSecond(()=>{
     $hour.text(`${date().hour}:${date().minute}`)
     $hour.setAttribute('date-second', date().second)
     $d.text(date().day)
