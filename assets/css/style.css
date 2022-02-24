@@ -124,6 +124,7 @@
   background: linear-gradient(35deg, rgba(255,255,255,.1) 0, rgba(255,255,255,.1) 50%, rgba(255,255,255,.15) 51%, rgba(255,255,255,.15) 100%);
   margin-bottom: 20px;
   transition: 200ms;
+  backdrop-filter: blur(20px);
 }
 .item:hover {
   box-shadow: 0 0 30px 0 rgba(255,255,255,.1);
@@ -196,6 +197,7 @@ i{
   font-size: 100px;
   cursor: pointer;
   background: linear-gradient(45deg, rgba(255,255,255,.1) 0, rgba(255,255,255,.1) 50%, rgba(255,255,255,.15) 51%, rgba(255,255,255,.15) 100%);
+  backdrop-filter: blur(20px);
 }
 .icons .st-row .st-col > div:hover i {
   font-size: 120px;
