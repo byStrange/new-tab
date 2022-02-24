@@ -7,7 +7,7 @@ function date() {
         minute: now.getMinutes().toString().length == 1 ? '0'+  now.getMinutes() : now.getMinutes(),
         second: now.getSeconds(),
         month: now.getMonth(),
-        day:  now.getDay()
+        date:  now.getDate()
     }
 }
 
@@ -15,5 +15,5 @@ function date() {
 every().milliSecond(()=>{
     $hour.text(`${date().hour}:${date().minute}`)
     $hour.setAttribute('data-second', date().second)
-    $d.text(date().day)
+    $d.text(date().date)
 })
