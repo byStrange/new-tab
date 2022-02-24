@@ -109,7 +109,7 @@ class Item {
     constructor(title, content) {
         this.title = title;
         this.content = content;
-        this.maxWidth = 20
+        this.maxWidth = 40
     }
     make() {
         var template = `
