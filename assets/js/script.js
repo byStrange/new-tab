@@ -98,7 +98,8 @@ function open() {
     })
     anime({
         targets: $modalAdd.querySelectorAll('*'),
-        translateX: [-40, 0],
+        translateX: [-10, 0],
+        opacity: [0, 1],
         delay: anime.stagger(100),
         easing: easing
     })
