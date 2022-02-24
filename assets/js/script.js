@@ -73,7 +73,9 @@ $add.on('click', function () {
     })
 })
 
-$modalAdd.on('click', function () {
+$modalAdd.on('click', function (event) {
+    event.preventDefault();
+    event.stopPropogation()
     anime.timeline({
         targets: $modalAdd,
         opacity: opacity
