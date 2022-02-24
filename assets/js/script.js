@@ -77,6 +77,7 @@ $add.on('click', function () {
 $modalAdd.on('click', function (event) {
     event.preventDefault();
     console.log(event.target)
+    console.log(event.target == $modalAdd)
     if(event.target = $modalAdd) {
         // anime.timeline({
             // targets: $modalAdd,
