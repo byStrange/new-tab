@@ -66,6 +66,7 @@ setDate()
 every().second(setDate)
 var height = $modalAdd.getBoundingClientRect().height;
 $add.on('click', function () {
+    $modalAdd.css('display', 'flex')
     anime({
         targets: $modalAdd,
         scale: 1,
@@ -81,8 +82,10 @@ $modalAdd.on('click', function (event) {
             targets: $modalAdd,
             opacity: opacity
         }).add({
-            scale: 0,
+            scale: 10,
             easing: easing
+        }).finished.then(()=>{
+            $modalAdd.css('display', 'none')
         })
     } // $modalAdd.css('display', 'none')
 })
