@@ -1,5 +1,4 @@
-console.log('happy mo :|')
-
+import { anime } from "anime"
 function date() {
     const now = new Date();
     return {
@@ -17,3 +16,4 @@ every().milliSecond(()=>{
     $hour.setAttribute('data-second', date().second)
     $d.text(date().date)
 })
+console.log(anime)
