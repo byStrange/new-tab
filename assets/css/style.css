@@ -76,7 +76,7 @@
 .date #hour::after {
   content: attr(data-second);
   position: absolute;
-  right: 200px;
+  right: 230px;
   font-size: 18px;
   font-family: var(--font-poppins);
 }
