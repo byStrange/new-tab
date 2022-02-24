@@ -1,0 +1,13 @@
+:root{
+    --bg-color: #222831;
+    --font-techno: "techno overload (BRK)", poppins, serif;
+    --font-poppins: poppins, serif;
+    --font-sketch: "Culdesac";
+    /* --font-sketch: "sketch gothic"; */
+    --font-led: "Led display7";
+    --c-btn: #E94560;
+    --c-gh: #171515;
+    --input-color: rgb(13,22,42);
+    --c-btn-opacity:  rgb(233,69,96, .7);
+    --backdrop-size: 5px;
+  }

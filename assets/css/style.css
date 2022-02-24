@@ -1,22 +1,10 @@
 @import url('culdesac.css');
+@import url('root.css');
 /* @import url('http://fonts.cdnfonts.com/css/poppins'); */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-:root{
-  --bg-color: #222831;
-  --font-techno: "techno overload (BRK)", poppins, serif;
-  --font-poppins: poppins, serif;
-  --font-sketch: "Culdesac";
-  /* --font-sketch: "sketch gothic"; */
-  --font-led: "Led display7";
-  --c-btn: #E94560;
-  --c-gh: #171515;
-  --input-color: rgb(13,22,42);
-  --c-btn-opacity:  rgb(233,69,96, .7);
-  
 }
 .popup {
   position:absolute;
@@ -124,7 +112,7 @@
   background: linear-gradient(35deg, rgba(255,255,255,.1) 0, rgba(255,255,255,.1) 50%, rgba(255,255,255,.15) 51%, rgba(255,255,255,.15) 100%);
   margin-bottom: 20px;
   transition: 200ms;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(var(--backdrop-size));
 }
 .item:hover {
   box-shadow: 0 0 30px 0 rgba(255,255,255,.1);
@@ -197,7 +185,7 @@ i{
   font-size: 100px;
   cursor: pointer;
   background: linear-gradient(45deg, rgba(255,255,255,.1) 0, rgba(255,255,255,.1) 50%, rgba(255,255,255,.15) 51%, rgba(255,255,255,.15) 100%);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(var(--backdrop-size));
 }
 .icons .st-row .st-col > div:hover i {
   font-size: 120px;
