@@ -66,6 +66,14 @@ every().second(setDate)
 $add.on('click', function () {
     $modalAdd.css('display', 'flex')
 })
-window.on('click', function() {
-    console.log(event)
+
+$modalAdd.on('click', function () {
+    anime.timeline({
+        targets: $modalAdd,
+        opacity: [1, 0]
+    }).add({
+        height: 0,
+        easing: 'easeOutExpo'
+    })
+    // $modalAdd.css('display', 'none')
 })
