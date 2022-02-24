@@ -1,5 +1,6 @@
 // import { anime } from "./anime.js" 
 const opacity = [0, 1]
+const reversalOpacity = [1, 0]
 const easing = "easeOutExpo"
 function date() {
     const now = new Date();
@@ -82,7 +83,7 @@ $modalAdd.on('click', function (event) {
             targets: $modalAdd,
         }).add({
             scale: 3,
-            opacity: opacity,
+            opacity: reversalOpacity,
             easing: easing
         }).finished.then(()=>{
             $modalAdd.css('display', 'none')
